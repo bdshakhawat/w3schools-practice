@@ -16,8 +16,19 @@ function myFunc(profession,designation){
     return profession + designation;
     // Return should be the last statement in a function
     console.log(3);
+    // Here this last console.log(3) will not be printed
 }
-myFunc('Teacher', 'Lecture');
+myFunc('Teacher', 'Lecturer');
+let x=myFunc('Teacher','Lecturer');
+
+// Local Scope(the variable decleared inside a function is known as local variable and can't be accsed from out side the function scope)
+function local() {
+    // let carName = "volvo";
+    var carName = "volvo"
+    console.log(carName);
+}
+local();
+console.log(carName);
 
 
 
