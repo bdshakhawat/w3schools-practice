@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Use one:JavaScript can change HTML content -->
+    <h2>What Can JavaScript Do?</h2>
+    <h3>Javascript accepts both double and single quotes</h3>
+
+<p id="test">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('test').innerHTML = 'Hello JavaScript!'">
+    Click Me!
+</button>
+
+<!-- Use Two:Javascript can change HTML attribute valu🇪   -->
+ <h2>
+    Javascript can change HTML attribute valu🇪 
+ </h2> 
+ <p>
+    In this example JavaScript changes the value of the src (source) attribute of an <img> tag:
+</p>
+<button
+ onclick="document.getElementById('myImage').src='images/200w (1).webp'" > Brust the light
+</button>
+<img  id="myImage" src="images/bulbon.jpg" alt=""  style="width: 300px;">
+
+<button
+onclick="document.getElementById('myImage').src='images/bulbon.jpg'"> Turn on the light
+
+</button>
+<button
+onclick="document.getElementById('myImage').src='images/off.jpg'"> Turn off
+
+</button>
+
+<!-- Javascript can change the style of the HTML element-->
+
+<p id="text-color">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio expedita sequi dolorum cum, vel recusandae labore ullam quia exercitationem?
+</p>
+<button
+onclick="document.getElementById('text-color').style.color='red'"> 
+    Click Me
+
+</button>
+<button
+onclick="document.getElementById('text-color').style.display='none'"> Hide Me
+
+</button>
+<button
+onclick="document.getElementById('text-color').style.display='block'">
+     Back Me
+
+</button>
+<button
+onclick="document.getElementById('text-color').style.fontWeight ='bold'"> Bold Me
+
+</button>
+
+<p id="test2"></p>
+<script>
+    // document.getElementById('test2').innerHTML='Hello Javascript';
+    function myFunction(){
+        document.getElementById('test3').innerHTML='Paragraph changed';
+
+    }
+</script>
+<p id="test3">Paragraph need to change</p>
+<button
+  onclick="myFunction()">Try it
+
+</button>
+
+    
+    
+</body>
+</html>
